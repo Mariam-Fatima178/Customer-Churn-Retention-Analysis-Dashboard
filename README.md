@@ -20,6 +20,6 @@ Slicers and filters for dynamic analysis by demographics, contract type, and pro
 
 Drill-through pages for detailed customer insights (planned).
 
-Objective
+# Objective
 
 To create a professional, business-ready dashboard that demonstrates the ability to turn raw data into actionable business insights using Power BI.
