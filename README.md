@@ -21,7 +21,7 @@ The analysis is structured using:
 
 ## 📊 Dashboard Structure
 
-### 1️⃣ Churn Overview Page
+### 1️⃣ Customer Churn Overview Page
 Provides a high-level view of what is driving churn by focusing on:
 - Churn distribution by **tenure groups**
 - Churn distribution by **monthly charge ranges**
@@ -31,7 +31,7 @@ Provides a high-level view of what is driving churn by focusing on:
 This page answers:
 > *At which tenure lengths and monthly charge ranges is churn most prevalent?*
 
-### 2️⃣ Drill-Through Page – Churn Drivers Analysis
+### 2️⃣ Drill-Through Page – Churn Drivers
 The drill-through page is used to identify the **underlying service-related causes** of churn.
 From the overview page, users can drill through any:
 - Tenure group  
