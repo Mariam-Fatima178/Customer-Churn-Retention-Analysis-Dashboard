@@ -1,64 +1,55 @@
-# Customer Churn & Retention Analysis Dashboard
+# 📉 Customer Churn & Retention Analysis Dashboard
+
 ## Project Overview
-This project analyzes **customer churn patterns** and **key service-related churn drivers** in a telecom dataset using **Power BI**.  
-The main objective is to support **data-driven retention strategies** by identifying high-risk customer segments and understanding the service-level factors that contribute to churn.
 
-The analysis is structured using:
-- A **Churn Overview** page to identify where churn is highest and lowest
-- A **Drill-Through** page to investigate the underlying causes of churn by comparing churned and non-churned customers
+This project analyzes customer churn patterns and service-related churn drivers in a telecom dataset using **Power BI**. The goal is to support data-driven retention strategies by identifying high-risk customer segments and the key factors contributing to churn.
 
-## Tools & Technologies
-- Power BI Desktop  
-- DAX
-- Data Cleaning & Transformation  
-- Interactive Dashboards & Drill-Through Analysis  
+The dataset covers **7,043 total customers** with an overall churn rate of **26.54%**. Despite paying higher average monthly charges ($74.4), churned customers generate significantly lower lifetime value ($1,531) compared to retained customers ($2,549) — proving that price alone cannot sustain loyalty.
 
-## Analysis Focus
-- Identify churn patterns based on **tenure** and **monthly charges**
-- Detect **high-churn and low-churn customer segments**
-- Drill down into **service usage** to uncover churn drivers
-- Compare **churned vs non-churned customers** to explain churn behavior
+---
+
+## 🛠️ Tools & Technologies
+
+- **Power BI Desktop** — Dashboard design and interactive reporting
+- **DAX** — Calculated measures and churn rate logic
+- **Power Query** — Data cleaning and transformation
+- **Drill-Through Analysis** — Cross-page root cause investigation
+
+---
 
 ## 📊 Dashboard Structure
 
 ### 1️⃣ Customer Churn Overview Page
-Provides a high-level view of what is driving churn by focusing on:
-- Churn distribution by **tenure groups**
-- Churn distribution by **monthly charge ranges**
-- Identification of tenure and pricing segments with:
-  - Highest churn
-  - Lowest churn
-This page answers:
-> *At which tenure lengths and monthly charge ranges is churn most prevalent?*
+Identifies where churn is highest and lowest by analyzing:
+- Churn distribution across **tenure groups** and **monthly charge ranges**
+- Side-by-side comparison of churned vs retained customer volumes
 
-### 2️⃣ Drill-Through Page – Churn Drivers
-The drill-through page is used to identify the **underlying service-related causes** of churn.
-From the overview page, users can drill through any:
-- Tenure group  
-- Monthly charge range  
+### 2️⃣ Drill-Through Page — Churn Drivers
+Uncovers the underlying causes of churn by breaking down customers across:
+- Contract type, Payment method, Tech support availability, Internet service type
 
-To analyze customer distribution by:
-- Contract type  
-- Payment method  
-- Tech support availability  
-- Internet service usage  
+---
 
 ## 🔍 Key Insights
-- Churn is highest among customers with:
-  - Month-to-month contracts
-  - Electronic check payment method
-  - No tech support
-  - Fiber optic internet service
-- Customers with longer tenure show lower churn rates
-- Retained customers display a more balanced service distribution compared to churned customers
 
-## Business Recommendations
-1. Bundle **tech support** with month-to-month plans to reduce churn among high-risk customers  
-2. Offer **targeted discounts** for customers with high monthly churn risk  
-3. Promote **auto-pay payment methods** over electronic check to improve retention
+- **Tenure** — Churn is highest in the 0-1 year group and drops consistently as tenure grows. Surviving the first year is the most critical retention milestone.
+- **Monthly Charges** — The $60–$90 range is the peak churn danger zone. Customers pay enough to feel pressure but lack the commitment or support to justify the cost.
+- **Contract Type** — 88.55% of all churned customers were on month-to-month contracts vs 57% of retained customers on annual or two-year plans. The single strongest churn predictor.
+- **Tech Support** — 77% of churned customers had no tech support. Retained customers show significantly higher adoption — unresolved problems silently drive churn.
+- **Fiber Optic** — Carries an alarming 41.89% overall churn rate vs DSL at 18.96%, indicating a product-level issue beyond just customer behavior.
+- **Payment Method** — Electronic check dominates the churned segment while auto-pay customers are consistently overrepresented in the retained segment, reflecting stronger commitment.
 
-## How to Use
-1. Open the `.pbix` file in **Power BI Desktop**
-2. Explore the **Churn Overview** page
-3. Use **drill-through** on tenure or monthly charge visuals
-4. Compare churned vs non-churned customers to identify churn drivers
+---
+
+## 💡 Business Recommendations
+
+1. **Incentivize annual contracts within the first 90 days** to convert high-risk month-to-month customers before churn behavior forms.
+2. **Bundle tech support into new customer plans** proactively rather than offering it as an optional add-on.
+3. **Review Fiber Optic service quality and pricing** — a behavioral fix alone will not resolve a product-level problem with a 41.89% churn rate.
+4. **Promote auto-pay enrollment** through discounts or rewards to reduce electronic check dependency and strengthen commitment signals.
+
+---
+
+## 📌 Conclusion
+
+Every churn driver identified — contract type, tenure, tech support, fiber optic risk, and payment behavior — points to the same window of opportunity: **the first 90 days of a customer's tenure**. Early intervention during this period has the highest potential to permanently shift a customer from high-risk to long-term loyal.
